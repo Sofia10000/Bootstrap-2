@@ -12,7 +12,7 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg bg-light">
-      <div>
+      <div class="d-flex flex-row justify-content-between align-items-center">
         <a class="navbar-brand" href="#">BoostLab Academy</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
@@ -33,7 +33,7 @@
   <main>
     <!-- HERO con intención, pero mal estructurado visualmente -->
     <section class="bg-light" aria-labelledby="titulo-hero">
-      <div class="container row">
+      <div class="container row d-flex flex-column flex-md-row justify-content-between align-items-center">
         <div class="col-md-3">
           <h1 id="titulo-hero">Aprende Bootstrap creando interfaces reales</h1>
           <p>
@@ -42,7 +42,9 @@
           </p>
           <a href="#contacto">Quiero apuntarme</a>
         </div>
+
         <img class="col-md-5" src="https://placehold.co/600x360?text=Bootstrap+Lab" alt="Ilustración de una interfaz web construida con Bootstrap">
+
       </div>
     </section>
 
@@ -56,22 +58,21 @@
         </p>
         <div></div>
         <div class="row">
-
-          <div class="card col-md-4">
-            <article class="card-body">
+          <div class="card col-md-4 d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <article class="card-body p-2">
               <h3 class="card-title">Grid responsive</h3>
               <p class="card-text">Organiza contenido en columnas que se adaptan a diferentes pantallas.</p>
             </article>
           </div>
 
           <div class="card col-md-4">
-            <article class="card-body">
+            <article class="card-body p-2">
               <h3  class="card-title">Componentes</h3>
               <p class="card-text">Usa piezas ya preparadas como botones, tarjetas, alertas o navegación.</p>
             </article>
           </div>
           <div class="card col-md-4">
-            <article class="card-body">
+            <article class="card-body p-2">
               <h3 class="card-title">Utilidades</h3>
               <p class="card-text">Ajusta espaciados, alineación, colores y tamaños directamente desde HTML.</p>
             </article>
@@ -86,9 +87,9 @@
       <div>
         <h2 id="titulo-recursos">Recursos del laboratorio</h2>
 
-        <div class="">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
           <div class="card">
-            <article class="card-body">
+            <article class="card-body p-2">
               <img class="card-img-top" src="https://placehold.co/400x220?text=Grid" alt="">
               <h3 class="card-title">Guía de grid</h3>
               <p class="card-text">Aprende a usar container, row y columnas responsive.</p>
@@ -97,27 +98,29 @@
           </div>
 
           <div class="card">
-            <article class="card-body">
+            <article class="card-body p-2">
               <img class="card-img-top" src="https://placehold.co/400x220?text=Cards" alt="">
-              <h3>Componentes básicos</h3>
-              <p>Practica con tarjetas, botones y elementos reutilizables.</p>
-              <a href="#">Ver recurso</a>
+              <h3 class="card-title">Componentes básicos</h3>
+              <p class="card-text">Practica con tarjetas, botones y elementos reutilizables.</p>
+              <a class="btn btn-primary" href="#">Ver recurso</a>
             </article>
           </div>
 
-          <article>
-            <img src="https://placehold.co/400x220?text=Utilities" alt="">
-            <h3>Utilidades visuales</h3>
-            <p>Mejora spacing, alineación, legibilidad y jerarquía visual.</p>
-            <a href="#">Ver recurso</a>
-          </article>
+          <div class="card">
+            <article class="card-body p-2">
+              <img class="card-img-top" src="https://placehold.co/400x220?text=Utilities" alt="">
+              <h3 class="card-title">Utilidades visuales</h3>
+              <p class="card-text">Mejora spacing, alineación, legibilidad y jerarquía visual.</p>
+              <a class="btn btn-primary" href="#">Ver recurso</a>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- CTA: funcional pero poco usable -->
     <section aria-labelledby="titulo-cta">
-      <div>
+      <div class="d-flex flex-row justify-content-between align-items-center">
         <h2 id="titulo-cta">Empieza a practicar hoy</h2>
         <p>
           Construye una interfaz, rómpela, mejórala y entiende Bootstrap desde dentro.
@@ -131,7 +134,7 @@
       <div>
         <h2 id="titulo-contacto">Solicita información</h2>
 
-        <form action="#" method="post">
+        <form action="#" method="post" class="d-flex flex-column flex-md-row justify-content-between align-items-center">
           <div>
             <label for="nombre">Nombre</label>
             <input id="nombre" name="nombre" type="text" autocomplete="name" required>
