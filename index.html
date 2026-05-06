@@ -33,15 +33,16 @@
   <main>
     <!-- HERO con intención, pero mal estructurado visualmente -->
     <section class="bg-light" aria-labelledby="titulo-hero">
-      <div>
-        <h1 id="titulo-hero">Aprende Bootstrap creando interfaces reales</h1>
-        <p>
-          Un laboratorio práctico para entender cómo funcionan el grid,
-          los componentes, las utilidades y el responsive en Bootstrap.
-        </p>
-        <a href="#contacto">Quiero apuntarme</a>
-
-        <img src="https://placehold.co/600x360?text=Bootstrap+Lab" alt="Ilustración de una interfaz web construida con Bootstrap">
+      <div class="container row">
+        <div class="col-md-3">
+          <h1 id="titulo-hero">Aprende Bootstrap creando interfaces reales</h1>
+          <p>
+            Un laboratorio práctico para entender cómo funcionan el grid,
+            los componentes, las utilidades y el responsive en Bootstrap.
+          </p>
+          <a href="#contacto">Quiero apuntarme</a>
+        </div>
+        <img class="col-md-5" src="https://placehold.co/600x360?text=Bootstrap+Lab" alt="Ilustración de una interfaz web construida con Bootstrap">
       </div>
     </section>
 
@@ -53,22 +54,29 @@
           El objetivo no es memorizar clases, sino probar, comparar y entender
           cuándo Bootstrap ayuda a construir más rápido.
         </p>
+        <div></div>
+        <div class="row">
 
-        <div>
-          <article>
-            <h3>Grid responsive</h3>
-            <p>Organiza contenido en columnas que se adaptan a diferentes pantallas.</p>
-          </article>
+          <div class="card col-md-4">
+            <article class="card-body">
+              <h3 class="card-title">Grid responsive</h3>
+              <p class="card-text">Organiza contenido en columnas que se adaptan a diferentes pantallas.</p>
+            </article>
+          </div>
 
-          <article>
-            <h3>Componentes</h3>
-            <p>Usa piezas ya preparadas como botones, tarjetas, alertas o navegación.</p>
-          </article>
+          <div class="card col-md-4">
+            <article class="card-body">
+              <h3  class="card-title">Componentes</h3>
+              <p class="card-text">Usa piezas ya preparadas como botones, tarjetas, alertas o navegación.</p>
+            </article>
+          </div>
+          <div class="card col-md-4">
+            <article class="card-body">
+              <h3 class="card-title">Utilidades</h3>
+              <p class="card-text">Ajusta espaciados, alineación, colores y tamaños directamente desde HTML.</p>
+            </article>
+          </div>
 
-          <article>
-            <h3>Utilidades</h3>
-            <p>Ajusta espaciados, alineación, colores y tamaños directamente desde HTML.</p>
-          </article>
         </div>
       </div>
     </section>
@@ -78,20 +86,24 @@
       <div>
         <h2 id="titulo-recursos">Recursos del laboratorio</h2>
 
-        <div>
-          <article>
-            <img src="https://placehold.co/400x220?text=Grid" alt="">
-            <h3>Guía de grid</h3>
-            <p>Aprende a usar container, row y columnas responsive.</p>
-            <a href="#">Ver recurso</a>
-          </article>
+        <div class="">
+          <div class="card">
+            <article class="card-body">
+              <img class="card-img-top" src="https://placehold.co/400x220?text=Grid" alt="">
+              <h3 class="card-title">Guía de grid</h3>
+              <p class="card-text">Aprende a usar container, row y columnas responsive.</p>
+              <a class="btn btn-primary" href="#">Ver recurso</a>
+            </article>
+          </div>
 
-          <article>
-            <img src="https://placehold.co/400x220?text=Cards" alt="">
-            <h3>Componentes básicos</h3>
-            <p>Practica con tarjetas, botones y elementos reutilizables.</p>
-            <a href="#">Ver recurso</a>
-          </article>
+          <div class="card">
+            <article class="card-body">
+              <img class="card-img-top" src="https://placehold.co/400x220?text=Cards" alt="">
+              <h3>Componentes básicos</h3>
+              <p>Practica con tarjetas, botones y elementos reutilizables.</p>
+              <a href="#">Ver recurso</a>
+            </article>
+          </div>
 
           <article>
             <img src="https://placehold.co/400x220?text=Utilities" alt="">
