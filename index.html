@@ -12,7 +12,7 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg bg-light">
-      <div>a
+      <div class="d-flex flex-row justify-content-between align-items-center">
         <a class="navbar-brand" href="#">BoostLab Academy</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
@@ -33,13 +33,15 @@
   <main>
     <!-- HERO con intención, pero mal estructurado visualmente -->
     <section class="bg-light" aria-labelledby="titulo-hero">
-      <div>
-        <h1 id="titulo-hero">Aprende Bootstrap creando interfaces reales</h1>
-        <p>
-          Un laboratorio práctico para entender cómo funcionan el grid,
-          los componentes, las utilidades y el responsive en Bootstrap.
-        </p>
-        <a href="#contacto">Quiero apuntarme</a>
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div>
+          <h1 id="titulo-hero">Aprende Bootstrap creando interfaces reales</h1>
+          <p>
+            Un laboratorio práctico para entender cómo funcionan el grid,
+            los componentes, las utilidades y el responsive en Bootstrap.
+          </p>
+          <a href="#contacto">Quiero apuntarme</a>
+        </div>
 
         <img src="https://placehold.co/600x360?text=Bootstrap+Lab" alt="Ilustración de una interfaz web construida con Bootstrap">
       </div>
@@ -54,18 +56,18 @@
           cuándo Bootstrap ayuda a construir más rápido.
         </p>
 
-        <div>
-          <article>
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <article class="p-2">
             <h3>Grid responsive</h3>
             <p>Organiza contenido en columnas que se adaptan a diferentes pantallas.</p>
           </article>
 
-          <article>
+          <article class="p-2">
             <h3>Componentes</h3>
             <p>Usa piezas ya preparadas como botones, tarjetas, alertas o navegación.</p>
           </article>
 
-          <article>
+          <article class="p-2">
             <h3>Utilidades</h3>
             <p>Ajusta espaciados, alineación, colores y tamaños directamente desde HTML.</p>
           </article>
@@ -78,22 +80,22 @@
       <div>
         <h2 id="titulo-recursos">Recursos del laboratorio</h2>
 
-        <div>
-          <article>
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <article class="p-2">
             <img src="https://placehold.co/400x220?text=Grid" alt="">
             <h3>Guía de grid</h3>
             <p>Aprende a usar container, row y columnas responsive.</p>
             <a href="#">Ver recurso</a>
           </article>
 
-          <article>
+          <article class="p-2">
             <img src="https://placehold.co/400x220?text=Cards" alt="">
             <h3>Componentes básicos</h3>
             <p>Practica con tarjetas, botones y elementos reutilizables.</p>
             <a href="#">Ver recurso</a>
           </article>
 
-          <article>
+          <article class="p-2">
             <img src="https://placehold.co/400x220?text=Utilities" alt="">
             <h3>Utilidades visuales</h3>
             <p>Mejora spacing, alineación, legibilidad y jerarquía visual.</p>
@@ -105,7 +107,7 @@
 
     <!-- CTA: funcional pero poco usable -->
     <section aria-labelledby="titulo-cta">
-      <div>
+      <div class="d-flex flex-row justify-content-between align-items-center">
         <h2 id="titulo-cta">Empieza a practicar hoy</h2>
         <p>
           Construye una interfaz, rómpela, mejórala y entiende Bootstrap desde dentro.
@@ -119,7 +121,7 @@
       <div>
         <h2 id="titulo-contacto">Solicita información</h2>
 
-        <form action="#" method="post">
+        <form action="#" method="post" class="d-flex flex-column flex-md-row justify-content-between align-items-center">
           <div>
             <label for="nombre">Nombre</label>
             <input id="nombre" name="nombre" type="text" autocomplete="name" required>
