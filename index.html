@@ -38,11 +38,11 @@
 
   <main>
     <!-- HERO con intención, pero mal estructurado visualmente -->
-    <section class="bg-light" aria-labelledby="titulo-hero">
+    <section class="bg-light p-3" aria-labelledby="titulo-hero">
       <div class="container row d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <div class="col-md-3">
+        <div class="col-md-3 w-50">
           <h1 id="titulo-hero">Aprende Bootstrap creando interfaces reales</h1>
-          <p>
+          <p class="text-dark fs-6">
             Un laboratorio práctico para entender cómo funcionan el grid,
             los componentes, las utilidades y el responsive en Bootstrap.
           </p>
@@ -55,7 +55,7 @@
     </section>
 
     <!-- BENEFICIOS: contenido bueno, estructura pobre -->
-    <section id="beneficios" aria-labelledby="titulo-beneficios">
+    <section id="beneficios" aria-labelledby="titulo-beneficios" class="p-3">
       <div>
         <h2 id="titulo-beneficios">Qué vas a practicar</h2>
         <p>
@@ -63,14 +63,13 @@
           cuándo Bootstrap ayuda a construir más rápido.
         </p>
         <div></div>
-        <div class="row">
-          <div class="card col-md-4 d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div class="container row d-flex flex-column flex-md-row justify-content-between align-items-center p-2">
+          <div class="card col-md-4">
             <article class="card-body p-2">
               <h3 class="card-title">Grid responsive</h3>
               <p class="card-text">Organiza contenido en columnas que se adaptan a diferentes pantallas.</p>
             </article>
           </div>
-
           <div class="card col-md-4">
             <article class="card-body p-2">
               <h3  class="card-title">Componentes</h3>
@@ -83,13 +82,12 @@
               <p class="card-text">Ajusta espaciados, alineación, colores y tamaños directamente desde HTML.</p>
             </article>
           </div>
-
         </div>
       </div>
     </section>
 
     <!-- RECURSOS: contenido repetible para cards -->
-    <section id="recursos" aria-labelledby="titulo-recursos">
+    <section id="recursos" aria-labelledby="titulo-recursos" class="p-3">
       <div>
         <h2 id="titulo-recursos">Recursos del laboratorio</h2>
 
@@ -125,7 +123,7 @@
     </section>
 
     <!-- CTA: funcional pero poco usable -->
-    <section aria-labelledby="titulo-cta">
+    <section aria-labelledby="titulo-cta" class="p-3">
       <div class="d-flex flex-row justify-content-between align-items-center">
         <div>
           <h2 id="titulo-cta">Empieza a practicar hoy</h2>
@@ -138,7 +136,7 @@
     </section>
 
     <!-- FORMULARIO: semántico y accesible, pero sin estilo -->
-    <section id="contacto" aria-labelledby="titulo-contacto">
+    <section id="contacto" aria-labelledby="titulo-contacto" class="p-3">
       <div>
         <h2 id="titulo-contacto">Solicita información</h2>
 
@@ -164,7 +162,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="p-3">
     <div>
       <p>&copy; 2026 BoostLab Academy. Proyecto de práctica para Bootstrap Puzzle Lab.</p>
     </div>
